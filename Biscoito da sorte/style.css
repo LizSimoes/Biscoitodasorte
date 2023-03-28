@@ -1,0 +1,130 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: rgb(25, 3, 97);
+  background: linear-gradient(
+    14deg,
+    rgba(25, 3, 97, 1) 0%,
+    rgba(25, 3, 97, 1) 0%,
+    rgba(187, 0, 255, 1) 100%
+  );
+}
+
+main {
+  border-radius: 5px;
+  -webkit-box-shadow: 0px 0px 35px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 0px 35px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 0px 35px 0px rgba(0, 0, 0, 0.75);
+}
+
+.page {
+  text-align: center;
+  background: #ffffff;
+  height: 50vh;
+  width: 400px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.page img {
+  width: 65%;
+  margin-top: 25px;
+}
+
+.page img:hover {
+  animation: blur 0.5s infinite ease-in-out;
+  cursor: pointer;
+}
+
+@keyframes blur {
+  0% {
+    transform: rotate(5deg);
+  }
+  100% {
+    transform: rotate(-5deg);
+  }
+}
+
+.page h1 {
+  color: #34355b;
+  max-width: 250px;
+  margin-top: 40px;
+  font-size: 23px;
+  font-family: "Montserrat", sans-serif;
+}
+
+.page p {
+  font-family: "DM Sans", sans-serif;
+  color: #34355b;
+  margin-top: 14px;
+  font-size: 14px;
+}
+
+.page2 {
+  display: none;
+  flex-direction: column;
+  background: #ffffff;
+  height: 55vh;
+  width: 320px;
+  border-radius: 5px;
+  align-items: center;
+}
+
+.page2 h1 {
+  font-family: "Montserrat", sans-serif;
+  color: #34355b;
+  font-size: 20px;
+  max-width: 250px;
+  text-align: center;
+  margin-top: 40px;
+}
+
+.page2 p {
+  font-family: "Dancing Script", cursive;
+  max-width: 200px;
+  text-align: center;
+  animation: opacity 1s ease-in;
+  margin-top: 10px;
+  background: #e4edf1;
+  padding: 10px;
+  -webkit-box-shadow: 10px 10px 5px -3px rgba(204, 200, 204, 1);
+  -moz-box-shadow: 10px 10px 5px -3px rgba(204, 200, 204, 1);
+  box-shadow: 10px 10px 5px -3px rgba(204, 200, 204, 1);
+}
+
+.page2 button {
+  background: #ff9500;
+  color: #ffffff;
+  border: none;
+  padding: 15px 20px 15px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-family: "DM Sans", sans-serif;
+}
+
+.page2 img {
+  width: 70%;
+}
+
+@keyframes opacity {
+  0% {
+    transform: translateY(50px);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
